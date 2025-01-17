@@ -1,0 +1,4 @@
+- Renombrar proyecto a portafolio-personal portafolio-lucy
+- Crear proyecto en github
+- Subir todos los cambios realizados en local al repositorio remoto
+- Copiar el código fuente de los videos 1, 2, 5 para comparar como se hace el componente navbar
