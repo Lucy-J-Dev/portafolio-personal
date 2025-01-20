@@ -1,7 +1,7 @@
 const NavbarDos = () => {
   return (
     <div>
-      <p>Componente navbar 2</p>
+      <p></p>
     </div>
   );
 };
