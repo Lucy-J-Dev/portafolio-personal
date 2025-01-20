@@ -1,12 +1,11 @@
-import './App.css';
-import NavbarDos from './Components/NavbarDos';
-import NavbarUno from './Components/NavbarUno';
+import NavbarDos from './components/NavbarDos';
+import NavbarUno from './components/NavbarUno';
 
 function App() {
   return (
     <>
       <NavbarUno />
-      <NavbarDos />
+      {/* <NavbarDos /> */}
     </>
   );
 }
