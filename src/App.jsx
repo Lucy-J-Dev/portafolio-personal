@@ -1,3 +1,4 @@
+import Hero from './components/Hero';
 import NavbarDos from './components/NavbarDos';
 import NavbarUno from './components/NavbarUno';
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <NavbarUno />
       {/* <NavbarDos /> */}
+      <Hero />
     </>
   );
 }
