@@ -1,5 +1,60 @@
+/* sm */
+/* @media (min-width: 744px) { } */
+
+/* md */
+/* @media (min-width: 1024px) { } */
+
+/* lg */
+/* @media (min-width: 1440px) { } */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --text-color: #fff;
+  --color: #f52cf9;
+  --bg-color: #2d2d2e;
+  --first: #fff;
+  --second: #000;
+  --mob-color: #363636;
+  --box-bg: #333;
+  --clr-bg: #3e3e3e;
+  --place-clr: #afafaf;
+}
+
+body {
+  background: var(--bg-color);
+  height: 2000px;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* sm */
+@media (min-width: 744px) {
+  .container {
+    max-width: 744px;
+  }
+}
+
+/* md */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }

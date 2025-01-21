@@ -49,7 +49,7 @@ const NavbarUno = () => {
               </i>
             </label>
             <button className='hamburger'>
-              <div className='bar'></div>
+              <div className='bar'>Boton</div>
             </button>
           </div>
         </nav>
