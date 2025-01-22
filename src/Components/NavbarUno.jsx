@@ -48,9 +48,6 @@ const NavbarUno = () => {
                 <FaRegMoon />
               </i>
             </label>
-            <button className='hamburger'>
-              <div className='bar'>Boton</div>
-            </button>
           </div>
         </nav>
       </div>

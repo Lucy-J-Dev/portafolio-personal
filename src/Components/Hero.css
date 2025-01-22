@@ -1,0 +1,35 @@
+.hero {
+  padding-top: 90px;
+}
+
+.container-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+
+  padding: 60px 0;
+  color: var(--first);
+
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+  }
+
+  h1 span {
+    color: var(--color);
+  }
+
+  p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 60ch;
+    font-size: 1rem;
+  }
+}
+
+.container-button {
+  display: flex;
+  gap: 24px;
+}
