@@ -1,6 +1,7 @@
 import './Hero.css';
 import { FaGithub } from 'react-icons/fa6';
 import { TbBrandLinkedinFilled } from 'react-icons/tb';
+import { MdLocalPhone, MdOutlineFileDownload } from 'react-icons/md';
 
 const Hero = () => {
   return (
@@ -20,23 +21,25 @@ const Hero = () => {
               llamativas, adaptables y amigables con el usuario.
             </p>
             <div className='container-button'>
-              <button className='btn primary'>Contactame</button>
+              <button className='btn primary'>
+                <span>Contactame</span>
+                <MdLocalPhone />
+              </button>
 
-              <button className=' btn secondary'>Descargar CV</button>
+              <button className=' btn secondary'>
+                <span>Descargar CV</span>
+                <MdOutlineFileDownload />
+              </button>
             </div>
           </div>
 
           {/* Redes sociales */}
           <div className='container-social-media'>
             <a href=''>
-              <i>
-                <FaGithub />
-              </i>
+              <FaGithub />
             </a>
             <a href=''>
-              <i>
-                <TbBrandLinkedinFilled />
-              </i>
+              <TbBrandLinkedinFilled />
             </a>
           </div>
 
