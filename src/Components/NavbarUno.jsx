@@ -20,31 +20,29 @@ const NavbarUno = () => {
 
   return (
     <header>
-      <div className='container'>
+      <div className="container">
         <nav>
-          <div className='logo'>
-            <a href='#'>
+          <div className="logo">
+            <a href="#">
               <span>Lucy </span>Jimenez
             </a>
           </div>
-          <div className='list-darkmode-menu'>
+          <div className="list-darkmode-menu">
             <ul>
-              <li>
-                <a href='#about'>Sobre mi</a>
-              </li>
-              <li>
-                <a href='#projects'>Proyectos</a>
-              </li>
-              <li>
-                <a href='#contact'>Contacto</a>
-              </li>
+              {links.map((link, index) => {
+                return (
+                  <li key={index}>
+                    <a href={link.ref}>{link.text}</a>
+                  </li>
+                );
+              })}
             </ul>
-            <label className='mode'>
+            <label className="mode">
               {/* <input type='checkbox' checked='checked' id='darkModeButton' /> */}
-              <i className='fa-solid fa-sun'>
+              <i className="fa-solid fa-sun">
                 <FaRegSun />
               </i>
-              <i className='fa-solid fa-moon'>
+              <i className="fa-solid fa-moon">
                 <FaRegMoon />
               </i>
             </label>
