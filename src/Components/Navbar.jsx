@@ -1,20 +1,20 @@
-import './NavbarUno.css';
-import { FaRegSun } from 'react-icons/fa';
-import { FaRegMoon } from 'react-icons/fa';
+import "./Navbar.css";
+import { FaRegSun } from "react-icons/fa";
+import { FaRegMoon } from "react-icons/fa";
 
-const NavbarUno = () => {
+const Navbar = () => {
   const links = [
     {
-      ref: '#about',
-      text: 'Sobre mi',
+      ref: "#about",
+      text: "Sobre mi",
     },
     {
-      ref: '#projects',
-      text: 'Proyectos',
+      ref: "#projects",
+      text: "Proyectos",
     },
     {
-      ref: '#contact',
-      text: 'Contacto',
+      ref: "#contact",
+      text: "Contacto",
     },
   ];
 
@@ -53,20 +53,4 @@ const NavbarUno = () => {
   );
 };
 
-export default NavbarUno;
-
-{
-  /* <div className='list-darkmode-menu'>
-  <ul>
-    {links.map((link) => {
-      return (
-        <li>
-          <a key={link} href={'#'}>
-            {link}
-          </a>
-        </li>
-      );
-    })}
-  </ul>
-</div>; */
-}
+export default Navbar;

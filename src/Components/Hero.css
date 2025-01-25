@@ -2,24 +2,19 @@
   padding-top: 90px;
 }
 
-.container-description {
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: var(--padding-base);
   text-align: center;
 
   padding: 60px 0;
   color: var(--first);
 
-  .subtitle {
-    font-size: var(--size-2xl);
-    letter-spacing: 0.14em;
-    font-weight: 600;
-  }
-
   h1 {
-    font-size: var(--size-4xl);
+    font-size: var(--size-5xl);
+    line-height: 0.9em;
   }
 
   h1 span {
@@ -31,6 +26,12 @@
     font-size: 1rem;
     font-weight: 400;
   }
+}
+
+.subtitle {
+  font-size: var(--size-2xl);
+  letter-spacing: 0.14em;
+  font-weight: 600;
 }
 
 .container-button {

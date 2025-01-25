@@ -1,13 +1,21 @@
-import Hero from './components/Hero';
-import NavbarDos from './components/NavbarDos';
-import NavbarUno from './components/NavbarUno';
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
 
 function App() {
   return (
     <>
-      <NavbarUno />
-      {/* <NavbarDos /> */}
+      <Navbar />
       <Hero />
+      <Technologies />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* sm */
 /* @media (min-width: 744px) { } */
@@ -16,16 +16,17 @@
 }
 
 :root {
-  --text-color: #363636;
-  --color: #d21138;
-  --bg-color: #f0f0f6;
-  /* --first: #f0f0f6 */
-  --first: #262525;
-  --second: #000;
-  --mob-color: #363636;
-  --box-bg: #333;
-  --clr-bg: #3e3e3e;
-  --place-clr: #afafaf;
+  /* Fondo blanco */
+  --color: #ff5abd;
+  --color-dark: #b5247b;
+  --bg-color: #f9f9f9;
+  --first: #3e2a3d;
+
+  /* Fondo negro */
+  --color: #00e6e6;
+  --color-dark: #18abab;
+  --bg-color: #081b29;
+  --first: #f1f5f5;
 
   /* sizes */
   --size-sm: 0.875rem;
@@ -35,21 +36,38 @@
   --size-3xl: 3rem;
   --size-4xl: 3.7rem;
   --size-5xl: 4.5rem;
+
+  /* padding */
+  --padding-base: 1rem;
+  --padding-xl: 1.5rem;
 }
 
 body {
   background: var(--bg-color);
-  font-family: 'Fira Sans', serif;
+  font-family: "Fira Sans", serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--first);
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Belanosima', serif;
+  font-family: "Belanosima", serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--color);
+}
+
+h1 {
+  color: var(--first);
+  font-size: var(--size-4xl);
+}
+h2 {
+  font-size: var(--size-3xl);
+}
+h3 {
+  font-size: var(--size-2xl);
 }
 
 p {
@@ -60,8 +78,8 @@ p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: var(--padding-base);
+  padding-right: var(--padding-base);
 }
 
 /* Botones */
@@ -79,7 +97,7 @@ p {
 
   cursor: pointer;
   font-size: var(--size-2xl);
-  font-family: 'Belanosima', serif;
+  font-family: "Belanosima", serif;
 
   transition: all 0.4s ease;
 }
@@ -88,17 +106,18 @@ p {
   background-color: var(--color);
 }
 
+.primary:hover {
+  background-color: var(--color-dark);
+}
+
 .secondary {
   background-color: transparent;
 }
 
 .secondary:hover {
-  background-color: var(--color);
+  background-color: var(--color-dark);
 }
 
-.btn:hover {
-  opacity: 0.8;
-}
 .btn:active {
   transform: scale(0.95);
 }
@@ -118,8 +137,8 @@ p {
 }
 
 /* lg */
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1440px;
+    max-width: 1280px;
   }
 }
