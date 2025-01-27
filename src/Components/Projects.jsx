@@ -1,9 +1,10 @@
-import ProjectItem from "./ProjectItem";
+import ProjectItem from './ProjectItem';
+import './Projects.css';
 
 const Projects = () => {
   return (
-    <div id="projects" className="container">
-      <h2>Projectos</h2>
+    <div id="projects" className=" proyects container">
+      <h2>Proyectos</h2>
       <p>
         Lista de proyectos más destacados que me han ayudado a mejorar con mis
         habilidades como desarrolladora frontend.

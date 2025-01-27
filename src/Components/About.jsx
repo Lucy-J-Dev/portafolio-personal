@@ -1,6 +1,8 @@
+import './About.css';
+
 const About = () => {
   return (
-    <div id="about" className="container">
+    <div id="about" className="container about">
       <h2>De Psicologa a Desarrolladora</h2>
       <p>
         Welcome to my portfolio! As a former psychologist turned frontend

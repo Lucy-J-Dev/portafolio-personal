@@ -1,9 +1,10 @@
-import SocialMedia from "./SocialMedia";
-import TechItem from "./TechItem";
+import SocialMedia from './SocialMedia';
+import TechItem from './TechItem';
+import './contact.css';
 
 const Contact = () => {
   return (
-    <div id="contact" className="container">
+    <div id="contact" className="contact container">
       <h2>Contacto</h2>
       <p>
         Me puedes contactar a través de mis redes sociales, enviandome un correo
