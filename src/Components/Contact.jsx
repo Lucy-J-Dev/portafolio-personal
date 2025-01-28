@@ -1,6 +1,7 @@
-import SocialMedia from './SocialMedia';
-import TechItem from './TechItem';
-import './contact.css';
+import SocialMedia from "./SocialMedia";
+import TechItem from "./TechItem";
+import { MdLocalPhone } from "react-icons/md";
+import "./contact.css";
 
 const Contact = () => {
   return (
@@ -19,7 +20,10 @@ const Contact = () => {
         <SocialMedia />
       </div>
       <form>
-        <button>Enviar</button>
+        <button className="btn primary">
+          <span>Enviar</span>
+          <MdLocalPhone />
+        </button>
       </form>
     </div>
   );

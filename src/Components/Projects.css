@@ -4,17 +4,10 @@
   align-items: center;
   gap: var(--padding-base);
   text-align: center;
-  padding: 60px 0;
+  padding-top: 85px;
   color: var(--first);
 
-  h2 {
-    font-size: var(--size-4xl);
-    line-height: 0.9em;
-  }
-
   p {
-    max-width: 90ch;
-    font-size: 1rem;
-    font-weight: 400;
+    max-width: 85ch;
   }
 }

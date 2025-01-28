@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
+import "./SocialMedia.css";
 
 const SocialMedia = () => {
   return (
