@@ -1,15 +1,17 @@
-import { FaGithub } from "react-icons/fa6";
-import { TbBrandLinkedinFilled } from "react-icons/tb";
-import "./SocialMedia.css";
+import { FaSquareGithub } from 'react-icons/fa6';
+import { FaLinkedin } from 'react-icons/fa';
+// import { TbBrandLinkedinFilled } from 'react-icons/tb';
+import './SocialMedia.css';
 
 const SocialMedia = () => {
   return (
     <div className="container-social-media">
       <a href="">
-        <FaGithub />
+        <FaSquareGithub />
       </a>
       <a href="">
-        <TbBrandLinkedinFilled />
+        <FaLinkedin />
+        {/* <TbBrandLinkedinFilled /> */}
       </a>
     </div>
   );

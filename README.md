@@ -15,7 +15,7 @@
 [] Componentes para tecnologia TechItem
 [] Componentes para proyecto ProjectItem
 [] Agregar links a anchr de redes sociales
-[] En boton enviar busar icono de avion
+[x] En boton enviar busar icono de avion
 [] Buscar icono alternativo para Github que sea parecido al de Linkedin
 [] Hacer el h1 un elemento escondido con el nombre
 [] Modificar el Titulo principal de la pagina
