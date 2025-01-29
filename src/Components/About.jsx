@@ -1,4 +1,4 @@
-import "./About.css";
+import './About.css';
 
 const About = () => {
   return (
@@ -6,40 +6,42 @@ const About = () => {
       <h2>De Psicologa a Desarrolladora</h2>
       <div className="columns">
         <p>
-          Welcome to my portfolio! As a former psychologist turned frontend
-          developer, I bring a unique perspective to my work. My expertise lies
-          in crafting intuitive user experiences using HTML, CSS, JavaScript,
-          and React. I believe that understanding human behavior is crucial in
-          creating engaging and accessible web applications.
+          ¡Bienvenido a mi portafolio! Como ex psicólogo convertido en
+          desarrollador frontend, aporto una perspectiva única a mi trabajo. Mi
+          experiencia radica en la creación de experiencias de usuario
+          intuitivas utilizando HTML, CSS, JavaScript y React. Creo que
+          comprender el comportamiento humano es fundamental para desarrollar
+          aplicaciones web atractivas y accesibles
         </p>
 
         <p>
-          In my projects, I focus on clean code and responsive design, ensuring
-          that users have a seamless experience across devices. I enjoy
-          leveraging tools like GitHub for version control, which enhances
-          collaboration and project management. My goal is to create visually
-          appealing and functional websites that meet the needs of users and
-          clients alike.
+          En mis proyectos, me enfoco en escribir código limpio y en el diseño
+          responsivo, garantizando que los usuarios tengan una experiencia
+          fluida en todos los dispositivos. Disfruto utilizando herramientas
+          como GitHub para el control de versiones, lo que mejora la
+          colaboración y la gestión de proyectos. Mi objetivo es crear sitios
+          web visualmente atractivos y funcionales que satisfagan las
+          necesidades tanto de los usuarios como de los clientes.
         </p>
 
         <p>
-          I am passionate about continuous learning and staying updated with the
-          latest industry trends. Each project I undertake is an opportunity to
-          refine my skills and explore innovative solutions. I invite you to
-          browse through my work and see how I can help bring your ideas to
-          life.
+          Me apasiona el aprendizaje continuo y mantenerme actualizado con las
+          últimas tendencias de la industria. Cada proyecto que emprendo es una
+          oportunidad para perfeccionar mis habilidades y explorar soluciones
+          innovadoras. Te invito a explorar mi trabajo y descubrir cómo puedo
+          ayudarte a hacer realidad tus ideas.
         </p>
 
         <p>
-          Collaboration is at the heart of what I do. I value open communication
-          and feedback, as they are essential for successful project outcomes.
-          Whether youre looking for a complete website overhaul or just need
-          assistance with specific features, Im here to help.
+          La colaboración es el corazón de lo que hago. Valoro la comunicación
+          abierta y la retroalimentación, ya que son esenciales para el éxito de
+          cualquier proyecto. Ya sea que necesites una renovación completa de tu
+          sitio web o ayuda con funciones específicas, estoy aquí para ayudarte.
         </p>
 
         <p>
-          Thank you for visiting my portfolio. Lets connect and discuss how we
-          can work together to create something amazing!
+          ¡Gracias por visitar mi portafolio! Conectemos y hablemos sobre cómo
+          podemos trabajar juntos para crear algo increíble.
         </p>
       </div>
     </div>

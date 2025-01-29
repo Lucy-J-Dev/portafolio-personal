@@ -9,7 +9,7 @@
 [x] Diseño responsive para sección Contact
 [] Formulario en Contact
 [] Foto de aspirante
-[] Footer
+[x] Footer
 [] Traducir sección about de inglés a español
 [] Aplicar SEO en la pagina
 [] Componentes para tecnologia TechItem

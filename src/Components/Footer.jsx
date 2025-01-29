@@ -1,7 +1,9 @@
+import './Footer.css';
+
 const Footer = () => {
   return (
-    <div className="container">
-      <p>Footer</p>
+    <div className="footer container">
+      <p>Lucy Jmenez. Todos los derechos reservados. 2025</p>
     </div>
   );
 };
