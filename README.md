@@ -10,7 +10,7 @@
 [] Formulario en Contact
 [] Foto de aspirante
 [x] Footer
-[] Traducir sección about de inglés a español
+[x] Traducir sección about de inglés a español
 [] Aplicar SEO en la pagina
 [] Componentes para tecnologia TechItem
 [] Componentes para proyecto ProjectItem
@@ -20,3 +20,9 @@
 [] Hacer el h1 un elemento escondido con el nombre
 [] Modificar el Titulo principal de la pagina
 [] Crear el CV y hace que al dar clik se descargue
+
+# Tareas
+
+1. Incluir imagen de aspirante aunque sea un avatar
+2. Hacer diseño responsive del Hero (que las redes sociales salgan verticales, la descripción y los botónes se ubiquen en el lado izquierdo de la pagina y que la foto salga del lado derecho)
+3. Usar la data de la lista de las tecnologías para crear los elementos TechItem en la sección de Technologies (pasar la data del componente padre al componente hijo como se vio en el tutorial de introducción a React)
