@@ -1,27 +1,27 @@
-import { useState } from "react";
-import "./Navbar.css";
-import { FaRegSun } from "react-icons/fa";
-import { FaRegMoon } from "react-icons/fa";
-import { RiCloseLargeLine, RiMenu4Fill } from "react-icons/ri";
+import { useState } from 'react';
+import './Navbar.css';
+import { FaRegSun } from 'react-icons/fa';
+import { FaRegMoon } from 'react-icons/fa';
+import { RiCloseLargeLine, RiMenu4Fill } from 'react-icons/ri';
 
 const Navbar = () => {
   const links = [
     {
       id: 1,
-      ref: "#about",
-      text: "Sobre mi",
+      ref: '#about',
+      text: 'Sobre mi',
       active: true,
     },
     {
       id: 2,
-      ref: "#projects",
-      text: "Proyectos",
+      ref: '#projects',
+      text: 'Proyectos',
       active: false,
     },
     {
       id: 3,
-      ref: "#contact",
-      text: "Contacto",
+      ref: '#contact',
+      text: 'Contacto',
       active: false,
     },
   ];
@@ -51,8 +51,19 @@ const Navbar = () => {
           </ul>
           {/* Botones para dark/light mode */}
           <div className="navbar-menu-mode">
-            <FaRegSun />
-            <FaRegMoon />
+            {ligthMode ? (
+              <FaRegSun
+                onClick={() => {
+                  setLigthMode((prevState) => !prevState);
+                }}
+              />
+            ) : (
+              <FaRegMoon
+                onClick={() => {
+                  setLigthMode((prevState) => !prevState);
+                }}
+              />
+            )}
           </div>
         </div>
         {/* Botones del menu */}
