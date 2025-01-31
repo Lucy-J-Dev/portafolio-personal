@@ -2,14 +2,12 @@ header {
   position: fixed;
   top: 0;
   left: 0%;
-  height: 90px;
+  height: 70px;
   width: 100%;
   display: flex;
 
   align-items: center;
   justify-content: center;
-
-  /* background-color: tomato; */
 }
 
 nav {
@@ -18,11 +16,16 @@ nav {
   justify-content: space-between;
 }
 
-.logo {
-  a {
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 600;
+.navbar {
+  background-color: var(--bg-color);
+}
+
+.navbar-brand {
+  z-index: 1;
+
+  h1 {
+    font-size: var(--size-2xl);
+    font-weight: 400;
     color: var(--first);
 
     span {
@@ -31,11 +34,26 @@ nav {
   }
 }
 
-.list-darkmode-menu {
+.navbar-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 80vh;
+  width: 100%;
   display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background-color: var(--bg-color);
+  /* background-color: tomato; */
+
   ul {
     display: flex;
     gap: 32px;
+    flex-direction: column;
     list-style: none;
     li {
       a {
@@ -51,3 +69,21 @@ nav {
     }
   }
 }
+
+.navbar-menu-buttons {
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* sm */
+@media (min-width: 744px) {
+  .navbar-menu-buttons {
+    display: none;
+  }
+}
+
+/* md */
+/* @media (min-width: 1024px) { } */
+
+/* lg */
+/* @media (min-width: 1440px) { } */
