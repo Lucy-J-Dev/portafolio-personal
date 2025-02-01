@@ -1,7 +1,7 @@
-import SocialMedia from './SocialMedia';
-import TechItem from './TechItem';
-import { FaRegPaperPlane } from 'react-icons/fa6';
-import './contact.css';
+import SocialMedia from "./SocialMedia";
+import TechItem from "./TechItem";
+import { FaRegPaperPlane } from "react-icons/fa6";
+import "./contact.css";
 
 const Contact = () => {
   return (

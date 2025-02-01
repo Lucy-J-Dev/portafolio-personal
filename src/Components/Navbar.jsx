@@ -1,27 +1,27 @@
-import { useState } from 'react';
-import './Navbar.css';
-import { FaRegSun } from 'react-icons/fa';
-import { FaRegMoon } from 'react-icons/fa';
-import { RiCloseLargeLine, RiMenu4Fill } from 'react-icons/ri';
+import { useState } from "react";
+import "./Navbar.css";
+import { FaRegSun } from "react-icons/fa";
+import { FaRegMoon } from "react-icons/fa";
+import { RiCloseLargeLine, RiMenu4Fill } from "react-icons/ri";
 
 const Navbar = () => {
   const links = [
     {
       id: 1,
-      ref: '#about',
-      text: 'Sobre mi',
+      ref: "#about",
+      text: "Sobre mi",
       active: true,
     },
     {
       id: 2,
-      ref: '#projects',
-      text: 'Proyectos',
+      ref: "#projects",
+      text: "Proyectos",
       active: false,
     },
     {
       id: 3,
-      ref: '#contact',
-      text: 'Contacto',
+      ref: "#contact",
+      text: "Contacto",
       active: false,
     },
   ];
@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-      <nav className="container">
+      <nav className="container ">
         {/* La marca personal */}
         <div className="navbar-brand">
           <h1>
@@ -39,7 +39,7 @@ const Navbar = () => {
           </h1>
         </div>
         {/* Menu con los items de la pagina */}
-        <div className="navbar-menu">
+        <div className={`navbar-menu ${showMenu ? "show-menu" : ""}`}>
           <ul>
             {links.map((link, index) => {
               return (
