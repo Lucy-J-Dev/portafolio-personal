@@ -1,15 +1,13 @@
-import { FaHtml5 } from "react-icons/fa";
-import "./TechItem.css";
+// import { FaHtml5 } from 'react-icons/fa';
+import './TechItem.css';
 
-const TechItem = () => {
+const TechItem = ({ icon, title, description }) => {
   return (
     <div className="tech-item-container">
-      <div className="tech-item-icon">
-        <FaHtml5 />
-      </div>
+      <div className="tech-item-icon">{icon}</div>
       <div className="tech-item-description">
-        <h3>HTML</h3>
-        <p>Estructura</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
     </div>
   );
