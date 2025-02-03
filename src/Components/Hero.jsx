@@ -1,6 +1,6 @@
-import './Hero.css';
-import { MdLocalPhone, MdOutlineFileDownload } from 'react-icons/md';
-import SocialMedia from './SocialMedia';
+import "./Hero.css";
+import { MdLocalPhone, MdOutlineFileDownload } from "react-icons/md";
+import SocialMedia from "./SocialMedia";
 // import FotoLucy from '../assets/Foto-Lucy.jpg';
 
 const Hero = () => {
@@ -10,10 +10,10 @@ const Hero = () => {
         <div>
           {/* Texto en el hero */}
           <div className="hero-container">
-            <p className="subtitle">Hola...</p>
-            <h1>
+            <p className="hero-subtitle">Hola...</p>
+            <p className="hero-title">
               Soy <span>Lucy Jiménez </span>desarrolladora Frontend
-            </h1>
+            </p>
             <p>
               Bienvenidos a mi portafolio como desarrolladora Frontend. Soy
               Lucy, una programadora que está iniciando esta nueva etapa con una

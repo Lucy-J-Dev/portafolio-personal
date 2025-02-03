@@ -24,7 +24,8 @@ nav {
   z-index: 1;
 
   h1 {
-    font-size: var(--size-2xl);
+    white-space: nowrap; /* Evita que el texto del h1 haga un salto de línea. */
+    font-size: var(--size-3xl);
     font-weight: 400;
     color: var(--first);
 
