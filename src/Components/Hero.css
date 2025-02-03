@@ -36,8 +36,10 @@
   gap: 24px;
 }
 
-/* .container-photo {
-} */
+.container-photo {
+  max-width: 50%;
+  height: 50%;
+}
 
 /* sm */
 /* @media (min-width: 744px) { } */
