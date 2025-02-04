@@ -15,6 +15,5 @@
 .technologies-list {
   display: flex;
   justify-content: center;
-  gap: var(--size-base);
   flex-wrap: wrap;
 }
