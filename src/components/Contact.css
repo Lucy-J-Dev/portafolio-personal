@@ -49,6 +49,18 @@
   }
 }
 
+.contact-input-error {
+  color: rgb(225, 64, 64);
+  align-self: flex-start;
+}
+
+.contact-send-success {
+  margin-top: var(--padding-xl);
+  color: rgb(31, 245, 31);
+  white-space: pre-line;
+  justify-self: center;
+}
+
 /* sm */
 @media (min-width: 744px) {
   .contact-input-info {
