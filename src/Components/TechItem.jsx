@@ -1,5 +1,4 @@
-// import { FaHtml5 } from 'react-icons/fa';
-import './TechItem.css';
+import "./TechItem.css";
 
 const TechItem = ({ icon, title, description }) => {
   return (
