@@ -21,12 +21,7 @@
   --color-dark: #b5247b;
   --bg-color: #f9f9f9;
   --first: #3e2a3d;
-
-  /* Fondo negro */
-  --color: #00e6e6;
-  --color-dark: #18abab;
-  --bg-color: #081b29;
-  --first: #f1f5f5;
+  --bg-color-card: rgb(255, 90, 189, 0.3);
 
   /* sizes */
   --size-sm: 0.875rem;
@@ -62,12 +57,23 @@
   --padding-xl: 1.5rem;
 }
 
+[data-theme="dark"] {
+  /* Fondo negro */
+  --color: #00e6e6;
+  --color-dark: #18abab;
+  --bg-color: #081b29;
+  --first: #f1f5f5;
+  --bg-color-card: rgb(0, 230, 230, 0.3);
+}
+
 body {
   background: var(--bg-color);
   font-family: "Fira Sans", serif;
   font-weight: 400;
   font-style: normal;
   color: var(--first);
+
+  transition: all 500ms ease-in;
 }
 
 h1,

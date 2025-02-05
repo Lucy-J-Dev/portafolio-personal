@@ -49,7 +49,7 @@ nav {
   overflow: hidden;
 
   background-color: var(--bg-color);
-  transition: all 300ms ease-in;
+  transition: left 300ms ease-in;
 
   ul {
     display: flex;

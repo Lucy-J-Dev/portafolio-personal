@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { FaRegSun } from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa";
 import { RiCloseLargeLine, RiMenu4Fill } from "react-icons/ri";
+import { useTheme } from "../common/ThemeProvider";
 
 const Navbar = () => {
   const links = [
@@ -26,8 +27,15 @@ const Navbar = () => {
     },
   ];
 
+  const { theme, toggleTheme } = useTheme();
+  const themeIcon =
+    theme === "light" ? (
+      <FaRegMoon onClick={toggleTheme} />
+    ) : (
+      <FaRegSun onClick={toggleTheme} />
+    );
+
   const [showMenu, setShowMenu] = useState(false);
-  const [ligthMode, setLigthMode] = useState(true);
 
   return (
     <header className="navbar">
@@ -50,21 +58,7 @@ const Navbar = () => {
             })}
           </ul>
           {/* Botones para dark/light mode */}
-          <div className="navbar-menu-mode">
-            {ligthMode ? (
-              <FaRegSun
-                onClick={() => {
-                  setLigthMode((prevState) => !prevState);
-                }}
-              />
-            ) : (
-              <FaRegMoon
-                onClick={() => {
-                  setLigthMode((prevState) => !prevState);
-                }}
-              />
-            )}
-          </div>
+          <div className="navbar-menu-mode">{themeIcon}</div>
         </div>
         {/* Botones del menu */}
         <div className="navbar-menu-buttons">
