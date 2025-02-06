@@ -76,6 +76,10 @@ body {
   transition: all 500ms ease-in;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3 {
@@ -190,24 +194,7 @@ p {
   .container {
     max-width: 1440px;
   }
-
-  h1 {
-    color: var(--first);
-    font-size: var(--size-7xl);
-  }
-  h2 {
-    font-size: var(--size-6xl);
-  }
-  h3 {
-    font-size: var(--size-5xl);
-  }
-
-  p {
-    font-size: var(--size-2xl);
-  }
-
   .btn {
     gap: var(--size-xl);
-    font-size: var(--size-4xl);
   }
 }

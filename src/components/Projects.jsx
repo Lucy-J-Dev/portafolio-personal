@@ -1,5 +1,4 @@
-import ProjectItem from './ProjectItem';
-import './Projects.css';
+import "./Projects.css";
 
 const Projects = () => {
   return (
@@ -9,10 +8,7 @@ const Projects = () => {
         Lista de proyectos más destacados que me han ayudado a mejorar con mis
         habilidades como desarrolladora frontend.
       </p>
-      <ProjectItem />
-      <ProjectItem />
-      <ProjectItem />
-      <ProjectItem />
+      <p>{'"Sección en construcción"'}</p>
     </div>
   );
 };
