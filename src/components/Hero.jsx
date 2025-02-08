@@ -1,7 +1,7 @@
-import "./Hero.css";
-import { MdLocalPhone, MdOutlineFileDownload } from "react-icons/md";
-import SocialMedia from "./SocialMedia";
-// import FotoLucy from '../assets/Foto-Lucy.jpg';
+import './Hero.css';
+import { MdLocalPhone, MdOutlineFileDownload } from 'react-icons/md';
+import SocialMedia from './SocialMedia';
+import HeroImage from '../assets/Foto-Lucy-Jimenez.jpeg';
 
 const Hero = () => {
   return (
@@ -38,9 +38,8 @@ const Hero = () => {
 
           {/* Imagen personal */}
           <div className="container-photo">
-            {/* TODO: buscar una imagen temporal para ubicarla y hacer que salga en una forma redondeada */}
             <img
-              // src={FotoLucy}
+              src={HeroImage}
               alt="Foto de presentación de perfil de Lucy Jiménez"
             />
           </div>
