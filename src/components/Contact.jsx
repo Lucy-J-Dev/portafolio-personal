@@ -46,21 +46,12 @@ const Contact = () => {
         {/* Seccion texto contacto */}
         <div>
           <p>
-            Me puedes contactar a través de mis redes sociales, enviandome un
-            correo electrónico por llamada o llenando el formulario que
-            encuentras a continuación.
+            Me puedes contactar a través de mis redes sociales, enviándome un correo electrónico por llamada o llenando
+            el formulario que encuentras a continuación.
           </p>
           <div>
-            <TechItem
-              icon={<MdEmail />}
-              title={"Email"}
-              description={"lucy.jimenez.mejia@gmail.com"}
-            />
-            <TechItem
-              icon={<FaPhoneFlip />}
-              title={"Teléfono"}
-              description={"+57 3128145480"}
-            />
+            <TechItem icon={<MdEmail />} title={"Email"} description={"lucy.jimenez.mejia@gmail.com"} />
+            <TechItem icon={<FaPhoneFlip />} title={"Teléfono"} description={"+57 3128145480"} />
           </div>
           <SocialMedia />
         </div>

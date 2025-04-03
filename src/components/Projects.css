@@ -11,3 +11,7 @@
     max-width: 85ch;
   }
 }
+
+.icon-color {
+  color: var(--color);
+}

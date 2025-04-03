@@ -7,6 +7,12 @@
   align-items: center;
   flex: 1 0 calc(100% - var(--size-base));
   margin: 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+.tech-item-container:hover {
+  color: var(--first);
+  transform: scale(1.05);
 }
 
 .tech-item-icon {
