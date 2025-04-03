@@ -3,7 +3,6 @@ import { MdLocalPhone, MdOutlineFileDownload } from "react-icons/md";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import HeroImage from "../assets/Foto-Lucy-Jimenez.jpeg";
-import CV from "../assets/Lucy Jimenez - CV.pdf";
 
 const Hero = () => {
   return (
@@ -30,8 +29,8 @@ const Hero = () => {
                   </button>
                 </a>
 
-                <a href={CV} download>
-                  <button className=" btn secondary">
+                <a href="/Lucy Jimenez - CV.pdf" download>
+                  <button className="btn secondary">
                     <span>Descargar CV</span>
                     <MdOutlineFileDownload />
                   </button>
