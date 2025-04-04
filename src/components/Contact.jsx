@@ -2,7 +2,7 @@ import SocialMedia from "./SocialMedia";
 import TechItem from "./TechItem";
 import { FaRegPaperPlane, FaPhoneFlip } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import "./contact.css";
+import "./Contact.css";
 import { useState } from "react";
 
 // Biblioteca para enviar correo electrónico y manejo de formularios
