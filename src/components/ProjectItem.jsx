@@ -3,7 +3,9 @@ import "./ProjectItem.css";
 const ProjectItem = ({ id, title, description, tags, img, githubUrl, webUrl }) => {
   return (
     <div className="project-item-container">
-      <img src={img} alt={`Imagen del proyecto ${title}`} />
+      <div className="project-image-container">
+        <img src={img} alt={`Imagen del proyecto ${title}`} />
+      </div>
       <div className="project-content">
         <div className="project-title">
           <span>{id}</span>
@@ -15,10 +17,10 @@ const ProjectItem = ({ id, title, description, tags, img, githubUrl, webUrl }) =
             return <span key={index}>{tag}</span>;
           })}
           <div className="project-action-btns">
-            <a className="btn primary" href={githubUrl}>
+            <a className="btn primary" href={githubUrl} target="_blank" rel="noopener noreferrer">
               Ver código
             </a>
-            <a className="btn secondary" href={webUrl}>
+            <a className="btn secondary" href={webUrl} target="_blank" rel="noopener noreferrer">
               Ver web
             </a>
           </div>
