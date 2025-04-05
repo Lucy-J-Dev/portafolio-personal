@@ -4,38 +4,17 @@ import { FaRegSun } from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa";
 import { RiCloseLargeLine, RiMenu4Fill } from "react-icons/ri";
 import { useTheme } from "../common/ThemeProvider";
+import { links } from "../data/navbar.data";
 
 const Navbar = () => {
-  const links = [
-    {
-      id: 1,
-      ref: "#about",
-      text: "Sobre mi",
-      active: true,
-    },
-    {
-      id: 2,
-      ref: "#projects",
-      text: "Proyectos",
-      active: false,
-    },
-    {
-      id: 3,
-      ref: "#contact",
-      text: "Contacto",
-      active: false,
-    },
-  ];
-
   const { theme, toggleTheme } = useTheme();
-  const themeIcon =
-    theme === "light" ? (
-      <FaRegMoon onClick={toggleTheme} />
-    ) : (
-      <FaRegSun onClick={toggleTheme} />
-    );
+  const themeIcon = theme === "light" ? <FaRegMoon onClick={toggleTheme} /> : <FaRegSun onClick={toggleTheme} />;
 
   const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu((prevState) => !prevState);
+  };
 
   return (
     <header className="navbar">
@@ -52,7 +31,9 @@ const Navbar = () => {
             {links.map((link, index) => {
               return (
                 <li key={index}>
-                  <a href={link.ref}>{link.text}</a>
+                  <a href={link.ref} onClick={toggleMenu}>
+                    {link.text}
+                  </a>
                 </li>
               );
             })}
@@ -64,19 +45,7 @@ const Navbar = () => {
         <div className="navbar-menu-buttons">
           {/* mostrar menu es verdadero entonces que aparezca la x */}
           {/* mostrar menu es falso entonces que aparezca el icono de las lineas */}
-          {showMenu ? (
-            <RiCloseLargeLine
-              onClick={() => {
-                setShowMenu((prevState) => !prevState);
-              }}
-            />
-          ) : (
-            <RiMenu4Fill
-              onClick={() => {
-                setShowMenu((prevState) => !prevState);
-              }}
-            />
-          )}
+          {showMenu ? <RiCloseLargeLine onClick={toggleMenu} /> : <RiMenu4Fill onClick={toggleMenu} />}
 
           {/* <RiMenu4Fill />
           <RiCloseLargeLine /> */}

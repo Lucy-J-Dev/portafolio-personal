@@ -50,8 +50,8 @@ const Contact = () => {
             el formulario que encuentras a continuación.
           </p>
           <div>
-            <TechItem icon={<MdEmail />} title={"Email"} description={"lucy.jimenez.mejia@gmail.com"} />
-            <TechItem icon={<FaPhoneFlip />} title={"Teléfono"} description={"+57 3128145480"} />
+            <TechItem icon={MdEmail} title={"Email"} description={"lucy.jimenez.mejia@gmail.com"} />
+            <TechItem icon={FaPhoneFlip} title={"Teléfono"} description={"+57 3128145480"} />
           </div>
           <SocialMedia />
         </div>

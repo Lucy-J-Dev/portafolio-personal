@@ -17,11 +17,11 @@
 
 :root {
   /* Fondo blanco */
-  --color: #ff5abd;
+  --color: #ee3ea8;
   --color-dark: #ec249c;
   --bg-color: #f9f9f9;
   --first: #3e2a3d;
-  --bg-color-card: rgb(255, 90, 189, 0.8);
+  --bg-color-card: rgb(255, 90, 189, 0.4);
 
   /* sizes */
   --size-sm: 0.875rem;
@@ -120,6 +120,7 @@ p {
   flex-direction: row;
   gap: var(--size-sm);
   align-items: center;
+  justify-content: center;
   box-shadow: 0 0 10px var(--color-dark);
 
   font-size: var(--size-2xl);
@@ -155,6 +156,12 @@ p {
 
 .btn:active {
   transform: scale(0.95);
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
 }
 
 /* sm */
@@ -198,5 +205,6 @@ p {
   }
   .btn {
     gap: var(--size-xl);
+    font-size: var(--size-2xl);
   }
 }

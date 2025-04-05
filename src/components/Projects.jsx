@@ -1,3 +1,5 @@
+import { projects } from "../data/projects.data";
+import ProjectItem from "./ProjectItem";
 import "./Projects.css";
 import { LuConstruction } from "react-icons/lu";
 
@@ -10,6 +12,12 @@ const Projects = () => {
       </p>
       <p>{'"Sección en construcción"'}</p>
       <LuConstruction size={120} className="icon-color" />
+      {/* Lista de proyectos realizados */}
+      {/* <div className="projects-list">
+        {projects.map((project) => {
+          return <ProjectItem key={project.id} {...project} />;
+        })}
+      </div> */}
     </div>
   );
 };

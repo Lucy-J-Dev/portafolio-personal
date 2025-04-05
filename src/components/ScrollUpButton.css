@@ -3,7 +3,7 @@
   background-color: var(--color);
   padding: 0.25rem 1rem;
   border-radius: 4px;
-  font-size: 1.25rem;
+  font-size: var(--size-2xl);
   color: var(--primary);
 
   /* Ubicar el boton en un lugar fijo */
@@ -23,4 +23,25 @@
 
 .show-button {
   bottom: 1rem;
+}
+
+/* sm */
+@media (min-width: 744px) {
+  .scroll-up-button {
+    font-size: var(--size-3xl);
+  }
+}
+
+/* md */
+/* @media (min-width: 1024px) {
+  .scroll-up-button {
+    font-size: var(--size-3xl);
+  }
+} */
+
+/* lg */
+@media (min-width: 1440px) {
+  .scroll-up-button {
+    font-size: var(--size-4xl);
+  }
 }

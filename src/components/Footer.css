@@ -9,3 +9,21 @@
     font-size: var(--size-base);
   }
 }
+
+/* sm */
+@media (min-width: 744px) {
+  .footer {
+    p {
+      font-size: var(--size-2xl);
+    }
+  }
+}
+
+/* md */
+@media (min-width: 1024px) {
+  .footer {
+    p {
+      font-size: var(--size-3xl);
+    }
+  }
+}

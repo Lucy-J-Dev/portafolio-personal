@@ -20,8 +20,19 @@
 
 /* sm */
 @media (min-width: 744px) {
+  p {
+    font-size: var(--size-xl);
+  }
+}
+
+/* md */
+@media (min-width: 1024px) {
   .columns {
     column-count: 2;
     column-gap: 20px;
+  }
+
+  p {
+    font-size: var(--size-2xl);
   }
 }

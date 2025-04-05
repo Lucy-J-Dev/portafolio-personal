@@ -1,27 +1,21 @@
 .hero {
-  padding-top: 160px;
+  padding-top: 140px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-information {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: var(--padding-base);
   text-align: center;
-  color: var(--first);
-
-  p {
-    max-width: 60ch;
-    font-weight: 400;
-  }
-
-  a {
-    text-decoration: none;
-  }
 }
 
 .hero-subtitle {
-  font-size: var(--size-2xl);
+  font-size: var(--size-xl);
   letter-spacing: 0.14em;
   font-weight: 600;
 }
@@ -32,7 +26,7 @@
   font-style: normal;
   line-height: 0.9em;
 
-  font-size: var(--size-6xl);
+  font-size: var(--size-4xl);
   line-height: 0.9em;
 
   span {
@@ -42,22 +36,8 @@
 
 .container-button {
   display: flex;
-  gap: 24px;
-}
-
-.hero-left {
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px var(--color);
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  flex-direction: column;
+  gap: 6px;
 }
 
 .hero-social-media {
@@ -78,8 +58,32 @@
   }
 }
 
+.hero-left {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--color);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 /* sm */
-/* @media (min-width: 744px) {} */
+@media (min-width: 744px) {
+  .container-button {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-description {
+    font-size: var(--size-xl);
+  }
+}
 
 /* md */
 @media (min-width: 1024px) {
@@ -87,16 +91,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     gap: var(--size-2xl);
   }
-  .hero-right,
+
+  .hero-right {
+    width: 60%;
+  }
   .hero-left {
-    width: 50%;
+    width: 40%;
   }
 
   .hero-left {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 
   .hero-right {
@@ -110,12 +118,16 @@
     text-align: left;
   }
 
+  .hero-description {
+    font-size: var(--size-2xl);
+  }
+
   .hero-social-media {
     flex-direction: column;
   }
 
   .container-button {
-    button {
+    a {
       font-size: 19px;
     }
   }
@@ -123,8 +135,26 @@
 
 /* lg */
 @media (min-width: 1440px) {
+  .hero-right,
+  .hero-left {
+    width: 50%;
+  }
+
+  .hero-left {
+    width: 450px;
+    height: 450px;
+  }
+
+  .hero-subtitle {
+    font-size: var(--size-3xl);
+  }
+
+  .hero-title {
+    font-size: var(--size-5xl);
+  }
+
   .container-button {
-    button {
+    a {
       font-size: 24px;
     }
   }
